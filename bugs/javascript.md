@@ -15,3 +15,7 @@ POST /api/login
   password: '***'
 }
 ```
+
+## 3. change one common use component/teamplate by not found somewhere use
+
+## 4. use blur condition, will be satify some case you don't want
