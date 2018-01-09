@@ -90,6 +90,8 @@
 - vnode must be unique
 - JSX
 - functional component
+- slots() vs children
+  - slots().default neq to children, slots() eq children
 
 ## filter
 - where to use: mustache and v-bind
@@ -163,3 +165,11 @@
 - how modifier work
 - what's delegate to other component
 - how to use vue with typescript
+- what's difference between funcitonal component and normal component
+  - no this
+  - no state
+  - no lifecycle method
+  - use context.children as slots()
+
+## resouces
+- https://qianduan.group/posts/5a4dfd3770f2ba7107d5a776
