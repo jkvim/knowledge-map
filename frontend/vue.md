@@ -77,5 +77,89 @@
 - circular reference
 - v-once
 
+## mixin
+- what's the apply sequence of mixins and original option
+- how to handle conflict
+
+## custom directives
+- when to use directives - want to access low level dom
+- hook function
+
+## render funciton and vnode
+- virtual dom is entire tree of VNodes, built by a tree of Vue components
+- vnode must be unique
+- JSX
+- functional component
+
+## filter
+- where to use: mustache and v-bind
+- arguments place
+## vue-router
+- router dynamic params
+  - match-priority
+  - path-to-regexp
+- nested route
+- navigation
+  - router.push
+  - router.go
+  - ruoter.replace
+- hook
+  - beforeRouteUpdate
+  - onCompelete
+  - onAbort
+- named-route
+- named-view
+- redirect vs alias
+- pass props
+- history mode
+  - default is hash mode
+  - need to handle NotFound page
+- navigation guard (*)
+  - hooks
+  - flow (https://router.vuejs.org/zh-cn/advanced/navigation-guards.html)
+- meta
+  - auth redirect
+  - route record in matched array
+- transition
+- data-fetching
+  - before enter route
+  - after enter route
+  - before route update
+- scroll behavior control
+- lazyload and webpack
+- $router and $route
+  - $route is immutable
+  - $router and $route can be reach in every child component
+- <router-link>
+- <router-view>
+
+## vuex
+- state - view - action
+- concepts
+  - state
+    - single source of truth
+    - inject from root instance
+  - getter
+  - mutation
+    - sync
+  - action
+    - can be async
+  - module
+- project structure
+- plugin
+- form two way binding handle
+- test (*)
+
 ## question
 - vue can have multiple instance?
+- how template work?
+- how vue track data change and update dom?
+- what's the lifecycle?
+- does vue has high order component?
+- how vnode work
+- what's dataset
+- event system
+- how to implement v-model
+- how modifier work
+- what's delegate to other component
+- how to use vue with typescript
