@@ -16,6 +16,6 @@ POST /api/login
 }
 ```
 
-## 3. change one common use component/teamplate by not found somewhere use
+## 3. change one common use component/teamplate but forget to find any other code have use
 
 ## 4. use blur condition, will be satify some case you don't want
