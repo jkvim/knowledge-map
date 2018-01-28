@@ -11,10 +11,7 @@
 - [lifecycle](https://angular.io/guide/lifecycle-hooks)
 
 ## 3. [Template](https://angular.io/guide/template-syntax)
-- builtin directive use
-- event listen
-- pass props
-- syntax
+- template
   - not all javascript expressions is valid template expressions
   - template expression context maybe
    - component instance
@@ -113,6 +110,54 @@
     - $any type cast function
       - when to use: when hard to specify the type
       - syntax `$any(hero).name` or `$any(this).name`
+- lifecycle hooks
+  - constructor
+  - ngOnChanges
+  - ngOnInit
+  - ngDoCheck
+  - ngAfterContentInit
+  - ngAfterContentChecked
+  - ngAfterViewInit
+  - ngAfterViewChecked
+  - ngDestroy
+- Component Interaction
+  - Input and Output property
+  - local variable, props: can only use in template
+  - `@ViewChild`
+  - communicate by service
+- Component Style
+  - scoped
+  - not effect child component or project content
+  - `:host`, will add specific attribute to host element, but host element CSS more priority than component use `:host`
+  - `:host-context`, will look up ancestor has class name
+  - encapsulation option
+    - Native - [Shadow DOM](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Shadow_DOM)
+    - Emulated - will add specific attribute to each element
+    - None
+- Dynamic Component Loader
+  - anchor directive
+- Attribute directive
+  - change behavior or apperance of a DOM element
+  - `@Input` tell other compnent the property is public and avaliable for binding
+- Pipe
+  - Built-in pipe
+    - date
+    - upperCase
+    - lowerCase
+    - currency
+    - percent
+    - pass parameter by colon
+    - json
+  - chain pipes
+  - `PipeTransform` interface
+  - when use pipe, Angular will not detect change of **muate array**, you should **replace array**
+  - pure and impure pipes
+    - angular execute pure pipe when detech pure change
+    - angular execute impure pipe during every component change detection cycle
+    - implement pure pipe with pure function
+    - impure pipe:
+      - async pipe
+      - should cache if use http request
 
 ## 4. Metadata
 
@@ -124,3 +169,14 @@
 ## 7. Services
 
 ## 8. Dependency injection
+
+## 9. Question
+- how did set default value for non-required input props, or mark an input props as required
+- did directive similar to react highorder component(render jack)
+
+## 10. Suggestion
+- keep component independent of the HTML
+- be careful to use impure pipe
+
+## 11. HttpClient
+- should specify response type, when response is not JSON
