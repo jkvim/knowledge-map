@@ -1,0 +1,30 @@
+{
+  "name": "knowledge-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git cz"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jkvim/knowledge-map.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jkvim/knowledge-map/issues"
+  },
+  "homepage": "https://github.com/jkvim/knowledge-map#readme",
+  "devDependencies": {
+    "cz-customizable": "^5.2.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
+    },
+    "cz-customizable": {
+      "config": "cz-config.js"
+    }
+  }
+}
