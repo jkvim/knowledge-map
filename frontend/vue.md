@@ -170,6 +170,8 @@
   - no state
   - no lifecycle method
   - use context.children as slots()
+- when to use method, computed and watch
+  - https://www.w3cplus.com/vue/when-to-use-methods-computed-properties-or-watchers.html
 
 ## resouces
 - https://qianduan.group/posts/5a4dfd3770f2ba7107d5a776
