@@ -17,3 +17,9 @@ git shortlog -s -n
 git rebase -i --root
 ```
 [link](https://stackoverflow.com/a/2309391)
+
+## get current branch name
+```
+git rev-parse --abbrev-ref HEAD
+```
+[link](https://stackoverflow.com/a/12142066)
