@@ -23,3 +23,9 @@ git rebase -i --root
 git rev-parse --abbrev-ref HEAD
 ```
 [link](https://stackoverflow.com/a/12142066)
+
+## list commit from certain commit
+```
+git rev-list <since_hash>..HEAD
+```
+[stackoverflow](https://stackoverflow.com/a/7693298)
