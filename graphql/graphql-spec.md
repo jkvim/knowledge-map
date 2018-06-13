@@ -11,6 +11,7 @@
   - Object Field accept argument
 
 ### Interface
+- An Interface type provides the ability to describe fields that are shared across different types.
 
 ### Unions
 
@@ -24,10 +25,10 @@
 - variable of a nullable type cannot be provided to a non-null argument
 
 ## Directive
-
-### @skip
-
-### @include
+- @drepreacted
+- @skip
+- @include
+- custom
 
 ## Initial Type
 
