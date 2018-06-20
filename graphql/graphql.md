@@ -3,6 +3,14 @@
 - 2015 开源
 - 2016 成为标准
 
+## 是什么
+- GraphQL是一种强类型语言
+- GraphQL是关于关系的
+- GraphQL是一种查询语言
+- Schema Definition Language
+- GraphQL是可扩展的
+  - 自定义 Scalar Type
+
 ## 谁在使用 graphql
 - [Medium](http://www.infoq.com/cn/news/2018/05/medium-reactjs-graphql-migration)
 - [AirBnB](https://medium.com/airbnb-engineering/rearchitecting-airbnbs-frontend-5e213efc24d2)
@@ -13,8 +21,11 @@
 - [the Graph](https://thegraph.com/)
 
 ## 生态及工具
-- apollo
-- awesome-graphql
+- apollo-server
+- apollo-client
+- apollo-client-devtools
+- apollo-codegen
+- apollo-engine
 - graph-tool
 
 ## GrahpQL vs RESTful
@@ -27,15 +38,19 @@
 - 能够实时了解后端有哪些字段，不需要查契约
 - 开发工具可以自动补全提示，例如如果该字段是一个枚举类型的状态，需要查询契约就可以知道有哪些状态
 - thin layer API
-- 代码即文档
-- 实时调试
 - 服务端节省参数校验的逻辑，由 GraphQL 完成
 - 减少带宽和多个请求的网络时延
+- 有一个巨大的工具生态系统
+- 自带类型校验
+- 声明式得获取组件所需的数据，隐藏了请求数据的细节
+
+## 缺点
+- 没有 REST 发展的那么久，框架的支持不是很全面
 
 ## 应用场景
 - BFF
-
-## GraphQL 与 SQL
+  - GrahpQL vs BFF
+  - GrahpQL as BFF
 
 ## 类型系统
 - Scalar Types
@@ -49,14 +64,15 @@
   - like REST GET
 - Custom Scalar types
 
-## 输入与输出
-
 ## Query 和 Muatation
 - Muatation execute in serail to avoid race-condition
 - Query can be execute paralle
 
 ### Variable
 > can be use within field and types
+
+### Fragment
+> A GraphQL fragment is a shared piece of query logic
 
 
 ## Apollo
@@ -69,13 +85,39 @@
 - Using schema directives
 - Implement directive
 
+#### protobuf
+- https://github.com/google/protobuf
+- http://rejoiner.io/
+
 ### Apollo Client
-- Apollo
+- react-apollo
 - loading
-- fail
+- error
 - success
+- test
+- cache
+- retry
+- timeout
+- pagination
+- offline
+- i18n & l10n
+- ssr
+- side effect(redux-saga)
+
+#### Query
+#### Mutation
+- think of a GraphQL query or mutation as a tree of function calls for each field
+#### Cache
+- single source of truth of data
+#### Optimistic UI
+#### Local state
+#### Developer tool
 
 ### Apollo Engine
+- GraphQL caching
+- Query execution tracing
+- Error tracking
+- Trends
 
 ## Syntax and Tools
 ### Schema Definition Language(SDL)
@@ -89,13 +131,14 @@
 - allow to discover the types of schema, for easily query
 
 ### Resolver
-- provide the instructions for turning a GraphQL operation into data. 
+- provide the instructions for turning a GraphQL operation into data.
 - arguments
   - parent
   - args
   - context
   - info
 - default resolve
+- can call REST backend
 
 
 ## 其他
@@ -103,8 +146,15 @@
 - 微服务与 GraphQL
 - 安全
 - 缓存
+  - 在 API 的两侧缓存
+    - 在GraphQL API外边的基础设施层缓存整个响应；
+    - 在GraphQL服务器之下缓存底层对数据库和微服务访问所获取到的结果
+  - 将复杂性转移到客户端和服务器之间的一个新的层中 => GraphQL网关
+  - [apollo-cache-control](https://github.com/apollographql/apollo-cache-control)
 - 用户认证
 - DataLoader
+- 性能的跟踪
+- 错误处理
 
 ## FAQ
 
@@ -119,6 +169,12 @@
 ### 5. 客户端的更新是 Reactive 的吗？
 
 ### 6. 如何从 REST 逐步迁移到 GraphQL
+#### Medium
+> 保持稳定，看到好处，继续演化
+
+    1. 用 React.js 和 Apollo Client 重写客户端
+    2. 使用protocol buffers将传统API描述为可与GraphQL交互的schema。
+    3. 新服务将通过gRPC与GraphQL服务发生交互，新服务可以与旧服务完全独立开发，旧服务仍然为旧API提供支持。
 
 ### 7. 怎么配合 protocol buffers 使用 GraphQL
 
@@ -135,6 +191,7 @@
 > 用来 resolve field
 
 ### 12. 什么是 Schema stitching
+> 模式拼接，后端服务模块化
 
 ### 13. 如何使用 GraphQL 搭建 mock-server
 
@@ -157,3 +214,7 @@
 ### 18. GrahpQL vs RPC
 
 ### 19. GraphQL error vs REST error
+
+### 20. 模式拼接会导致请求延时吗？如果是 REST 的话分成多个请求返回，可能反而适合异步渲染
+
+### 21. 多了 GrahpQL 层是不是多了一倍的请求时间？
