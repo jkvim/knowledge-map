@@ -11,6 +11,7 @@ module.exports = {
 
   scopes: [
     {name: 'git'},
+    {name: 'graphql'},
     {name: 'mobile'},
     {name: 'frontend'},
     {name: 'bugs'},
