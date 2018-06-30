@@ -69,10 +69,17 @@
 - Query can be execute paralle
 
 ### Variable
-> can be use within field and types
+- can be use within field and types
+- Variables must be defined at the top of an operation and are in scope throughout the execution of that operation.
 
 ### Fragment
-> A GraphQL fragment is a shared piece of query logic
+- A GraphQL fragment is a shared piece of query logic
+- Fragments cannot be specified on any input value (scalar, enumeration, or input object).
+- Fragments can be specified on object types, interfaces, and unions.
+
+### Directive
+- Directives provide a way to describe alternate runtime execution and type validation behavior in a GraphQL document.
+- Directives can be used to describe additional information for types, fields, fragments and operations.
 
 
 ## Apollo
@@ -105,8 +112,13 @@
 - side effect(redux-saga)
 
 #### Query
+- query – a read‐only fetch.
 #### Mutation
 - think of a GraphQL query or mutation as a tree of function calls for each field
+- mutation – a write followed by a fetch.
+- lexecuted serially
+#### Subscription
+- subscription – a long‐lived request that fetches data in response to source events.
 #### Cache
 - single source of truth of data
 #### Optimistic UI
