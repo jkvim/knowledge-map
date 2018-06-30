@@ -8,4 +8,14 @@
 
 
 ## 路由
-- tab 应该用一级路由表示
+- tab 应该用路由表示
+
+## 抽象
+- 多个 Controller 共用一个模板
+- 多个模板共用一个 Controller(directive)
+
+## 组件
+- 页面级组件
+- 指令级组件
+
+## MVC or MVVM?
