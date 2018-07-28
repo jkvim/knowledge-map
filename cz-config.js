@@ -17,9 +17,10 @@ module.exports = {
     {name: 'bugs'},
     {name: 'auth'},
     {name: 'soft-skill'},
-    {name: 'algorithm'}
+    {name: 'algorithm'},
+    {name: 'shell'}
   ],
 
   allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix']
-}
+};
