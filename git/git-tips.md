@@ -40,3 +40,27 @@ git bisect bad [bad commit]
 git bisect reset
 ```
 [link](https://git-scm.com/book/zh/v1/Git-%E5%B7%A5%E5%85%B7-%E4%BD%BF%E7%94%A8-Git-%E8%B0%83%E8%AF%95)
+
+## how to rewrite git email
+```
+#!/bin/sh
+
+git filter-branch --env-filter '
+
+OLD_EMAIL="old_email"
+CORRECT_NAME="new_name"
+CORRECT_EMAIL="new_email"
+
+if [ "$GIT_COMMITTER_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_COMMITTER_NAME="$CORRECT_NAME"
+    export GIT_COMMITTER_EMAIL="$CORRECT_EMAIL"
+fi
+if [ "$GIT_AUTHOR_EMAIL" = "$OLD_EMAIL" ]
+then
+    export GIT_AUTHOR_NAME="$CORRECT_NAME"
+    export GIT_AUTHOR_EMAIL="$CORRECT_EMAIL"
+fi
+' --tag-name-filter cat -- --branches --tags
+```
+[so](https://stackoverflow.com/a/30737248/5540899)
