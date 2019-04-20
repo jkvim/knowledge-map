@@ -64,3 +64,6 @@ fi
 ' --tag-name-filter cat -- --branches --tags
 ```
 [so](https://stackoverflow.com/a/30737248/5540899)
+
+## change commit email and username
+[so](https://stackoverflow.com/a/3042512/5540899)

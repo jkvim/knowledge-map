@@ -1,0 +1,63 @@
+# 1.0.0 (2019-04-14)
+
+
+### Bug Fixes
+
+* **bugs:** update bugs about javascript ([9203af3](https://github.com/jkvim/knowledge-map/commit/9203af3))
+* **frontend:** update vue note ([8c4ff06](https://github.com/jkvim/knowledge-map/commit/8c4ff06))
+* **git:** update git tips ([b9cc4db](https://github.com/jkvim/knowledge-map/commit/b9cc4db))
+
+
+### Features
+
+* **auth:** add oauth2.0 ([d1e2776](https://github.com/jkvim/knowledge-map/commit/d1e2776))
+* **bugs:** add bugs of javascript ([71ae86e](https://github.com/jkvim/knowledge-map/commit/71ae86e))
+* **bugs:** update bugs about javascript ([15da520](https://github.com/jkvim/knowledge-map/commit/15da520))
+* **code:** add questions about code ([5de55ab](https://github.com/jkvim/knowledge-map/commit/5de55ab))
+* **frontend:** add angular ([6a0ca58](https://github.com/jkvim/knowledge-map/commit/6a0ca58))
+* **frontend:** add CSS font-variant ([8dd3289](https://github.com/jkvim/knowledge-map/commit/8dd3289))
+* **frontend:** add javascript expression vs statement ([5dbb0a6](https://github.com/jkvim/knowledge-map/commit/5dbb0a6))
+* **frontend:** add javascript knowleadge for frontend ([141012b](https://github.com/jkvim/knowledge-map/commit/141012b))
+* **frontend:** add router note to frontend folder ([150a8a6](https://github.com/jkvim/knowledge-map/commit/150a8a6))
+* **frontend:** add shadow-dom note ([7d02b38](https://github.com/jkvim/knowledge-map/commit/7d02b38))
+* **frontend:** add state management ([3e767ae](https://github.com/jkvim/knowledge-map/commit/3e767ae))
+* **frontend:** add vue learning note ([5a31e16](https://github.com/jkvim/knowledge-map/commit/5a31e16))
+* **frontend:** update angular ([df62b55](https://github.com/jkvim/knowledge-map/commit/df62b55))
+* **frontend:** update angular ([43aea1e](https://github.com/jkvim/knowledge-map/commit/43aea1e))
+* **frontend:** update angular & react ([c0b46aa](https://github.com/jkvim/knowledge-map/commit/c0b46aa))
+* **frontend:** update frontend with angularjs and learn-react-agian ([7dfa693](https://github.com/jkvim/knowledge-map/commit/7dfa693))
+* **frontend:** update frontend with angularjs, code-stuff, and form ([78cdc67](https://github.com/jkvim/knowledge-map/commit/78cdc67))
+* **frontend:** update some frontend note ([e4ace7b](https://github.com/jkvim/knowledge-map/commit/e4ace7b))
+* **frontend:** update vue ([a4fe095](https://github.com/jkvim/knowledge-map/commit/a4fe095))
+* **frontend:** update vue about when to use computed or watch ([e71ac96](https://github.com/jkvim/knowledge-map/commit/e71ac96))
+* **git:** add git binary search ([d8f2b06](https://github.com/jkvim/knowledge-map/commit/d8f2b06))
+* **git:** add git tips ([e0dd213](https://github.com/jkvim/knowledge-map/commit/e0dd213))
+* **git:** add how to rebase from first commit ([65736d4](https://github.com/jkvim/knowledge-map/commit/65736d4))
+* **git:** add tip for list commit from certain commit ([f35839a](https://github.com/jkvim/knowledge-map/commit/f35839a))
+* **git:** add tips about change email ([ceb989c](https://github.com/jkvim/knowledge-map/commit/ceb989c))
+* **git:** get current branch name ([efa04f5](https://github.com/jkvim/knowledge-map/commit/efa04f5))
+* **graphql:** add graphql ([2688bac](https://github.com/jkvim/knowledge-map/commit/2688bac))
+* **graphql:** update grahpql ([bacb35f](https://github.com/jkvim/knowledge-map/commit/bacb35f))
+* **graphql:** update grahpql spec and note ([2085830](https://github.com/jkvim/knowledge-map/commit/2085830))
+* **graphql:** update graphql note ([72dfeab](https://github.com/jkvim/knowledge-map/commit/72dfeab))
+* **graphql:** update graphql spec note ([dfb8ba8](https://github.com/jkvim/knowledge-map/commit/dfb8ba8))
+* **graphql:** update grqphql note ([6734a25](https://github.com/jkvim/knowledge-map/commit/6734a25))
+* **ios:** add app-store-review rules ([3409c44](https://github.com/jkvim/knowledge-map/commit/3409c44))
+* **mobile:** add api design note ([d822b44](https://github.com/jkvim/knowledge-map/commit/d822b44))
+* **mobile:** add how-to.md for mobile automation test ([c3ec144](https://github.com/jkvim/knowledge-map/commit/c3ec144))
+* **mobile:** add mobile debug notes ([e035520](https://github.com/jkvim/knowledge-map/commit/e035520))
+* **mobile:** add react-native folder ([75f2285](https://github.com/jkvim/knowledge-map/commit/75f2285))
+* **mobile:** add wechat awake app research note ([8d37e2b](https://github.com/jkvim/knowledge-map/commit/8d37e2b))
+* **mobile:** update note of mobile debug ([b855a08](https://github.com/jkvim/knowledge-map/commit/b855a08))
+* **nginx:** add nginx ([8956c05](https://github.com/jkvim/knowledge-map/commit/8956c05))
+* **node:** add network note ([fd29755](https://github.com/jkvim/knowledge-map/commit/fd29755))
+* **node:** add node bundle tools ([b69e4b3](https://github.com/jkvim/knowledge-map/commit/b69e4b3))
+* **react-native:** add tips for bundle react-native ([e55d695](https://github.com/jkvim/knowledge-map/commit/e55d695))
+* **shell:** add shell tips ([29a2db1](https://github.com/jkvim/knowledge-map/commit/29a2db1))
+* **soft-skill:** add soft-skill note ([6371a82](https://github.com/jkvim/knowledge-map/commit/6371a82))
+* **vim:** add vim ([eee596f](https://github.com/jkvim/knowledge-map/commit/eee596f))
+* **workshop:** add workshop ([ba48ec8](https://github.com/jkvim/knowledge-map/commit/ba48ec8))
+* update readme with block-chain ([6721fb4](https://github.com/jkvim/knowledge-map/commit/6721fb4))
+
+
+

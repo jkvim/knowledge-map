@@ -180,3 +180,16 @@
 
 ## 11. HttpClient
 - should specify response type, when response is not JSON
+
+## 12. Router
+- singleton
+- the order in configuation matter
+- debug, enableTracing: true
+- router-outlet
+  - placeholder
+- router links
+  - routerLink
+  - routerLinkActive
+- Router
+  - routerState
+    - ActivatedRoute: tree of current state
