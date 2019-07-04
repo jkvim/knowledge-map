@@ -64,6 +64,7 @@
     - template statement have side effect is OK and expected
   - Two way binding
     - has a input property call x and output event call xChange
+    - [custom two way binding](jrdfebankerst.paas.cmbchina.cn/manager/orginfo.html)
     - will change parent component's input property x, when change x
     - `[(x)]="value"` eq `[x]="value" (xChange)="value=$event"`
   - Build-in attribute directives
@@ -180,6 +181,10 @@
 
 ## 11. HttpClient
 - should specify response type, when response is not JSON
+- Error inspection, interpretation, and resolution is something you want to do in the service, not in the component.
+- must subscribe, request is deferred before subscribe
+- AsyncPipe subscribe automatically
+- interceptor order matter
 
 ## 12. Router
 - singleton
@@ -193,3 +198,34 @@
 - Router
   - routerState
     - ActivatedRoute: tree of current state
+- event
+  - NavigationStart
+  - RouteConfigLoadStart
+  - RouteRecognized
+  - GuardsChecksStart
+  - ChildActivationStart
+  - ActivationStart
+  - ResolveStart
+  - NavigationCancel
+  - Scroll
+- global routing module must after feature routing module
+- Matrix URL notation
+- Animation
+  - animation trigger
+    - `[@routeAnimation]="getAnimationData(outlet)"`
+- navigate by relative path
+- named outlet and unnamed outlet
+- Secondary Route, independent of primary route
+- guard
+  - handle asynchronous action before leave or enter
+  - interface
+    - CanActivate
+    - CanActivateChild
+    - CanDeactivate
+    - Resolve
+    - CanLoad
+  - ng g guard path/to/guard
+  - add canActivate property in route config
+- NavigationExtra
+  - QueryParameter
+  - Fragment
