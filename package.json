@@ -17,14 +17,11 @@
   },
   "homepage": "https://github.com/jkvim/knowledge-map#readme",
   "devDependencies": {
-    "cz-customizable": "^5.2.0"
+    "commitizen": "^3.1.1"
   },
   "config": {
     "commitizen": {
-      "path": "node_modules/cz-customizable"
-    },
-    "cz-customizable": {
-      "config": "cz-config.js"
+      "path": "./cz-config.js"
     }
   }
 }
