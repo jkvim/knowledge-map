@@ -23,5 +23,8 @@
     "commitizen": {
       "path": "./cz-config.js"
     }
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
